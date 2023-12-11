@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./portfolio/**/*.{html,js}"],
   theme: {
-    extend: {},
+    fontFamily: {
+      merriweather: ['Merriweather', 'serif'],
+    },
+    extend: {
+      backgroundImage: {
+        'matrix-pattern': "url('./background.png')",
+      },
+    },
   },
   plugins: [],
 }
