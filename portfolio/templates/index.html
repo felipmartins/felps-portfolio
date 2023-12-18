@@ -1,312 +1,276 @@
 {% load static %}
-<!DOCTYPE html >
+{% load custom_filters %}
+<!DOCTYPE html>
 
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Felps - Full Stack</title>
-        <link rel="stylesheet" href="{% static 'css/output.css' %}">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-        <script src="{% static 'js/index.js' %}" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felps - Full Stack</title>
+    <link rel="stylesheet" href="{% static 'css/output.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="{% static 'js/index.js' %}" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"
+        integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
 
-    <body class="bg-portYellow dark:bg-portPurple transition-colors duration-300">
-        
-        <section class="py-10 md:py-16">
+<body class="bg-portYellow dark:bg-portPurple transition-colors duration-300">
 
-            <div class="container max-w-screen-xl mx-auto px-4">
+    <section class="py-10 md:py-16">
 
-                <nav class="flex items-center justify-between mb-20">
-                    
-                    <div class="flex items-center justify-center"> 
-                        <label class="flex cursor-pointer relative">
-                            <input type="checkbox" class="sr-only peer"/>
-                            <div class="w-20 h-10 dark:bg-zinc-700 bg-zinc-100 peer flex items-center px-1 rounded-full after:bg-[length:40px_40px] after:bg-no-repeat after:bg-center after:bg-moon peer-checked:after:bg-sun after:transition-all after:duration-300 after:content-[''] after:left-0 peer-checked:after:left-9 after:flex after:relative after:w-9 after:h-9 after:bg-portPurple after:rounded-full shadow-inner after:rotate-0 peer-checked:after:rotate-180 after:animate-moon peer-checked:after:animate-sun">
+        <div class="container max-w-screen-xl mx-auto px-4">
 
-                            </div>
-                        </label>
-                    </div>
+            <nav class="flex items-center justify-between mb-20">
 
-                    <button class="px-7 py-3 md:px-9 md:py-4 bg-zinc-100 font-medium md:font-semibold text-portPurple text-md rounded-md hover:bg-portPurple dark:hover:bg-portYellow hover:text-white transition ease-linear duration-300">Veja meu CV</button>
-                </nav>
+                <div class="flex items-center justify-center">
+                    <label class="flex cursor-pointer relative">
+                        <input type="checkbox" class="sr-only peer" />
+                        <div
+                            class="w-20 h-10 dark:bg-zinc-700 bg-zinc-100 peer flex items-center px-1 rounded-full after:bg-[length:40px_40px] after:bg-no-repeat after:bg-center after:bg-moon peer-checked:after:bg-sun after:transition-all after:duration-300 after:content-[''] after:left-0 peer-checked:after:left-9 after:flex after:relative after:w-9 after:h-9 after:bg-portPurple after:rounded-full shadow-inner after:rotate-0 peer-checked:after:rotate-180 after:animate-moon peer-checked:after:animate-sun">
 
-                <div class="text-center">
-                    <div class="flex justify-center items-center mb-12">
-                        <img src="{% static '/img/felps.png' %}" alt="Image" class="h-[400px]">
-                    </div>
-
-                    <h6 class="font-medium text-portPurple dark:text-white text-lg md:text-2xl uppercase mb-8">Felps</h6>
-
-                    <h1 class="font-normal text-portPurple dark:text-portYellow text-4xl md:text-7xl leading-none mb-8">< Desenvolvedor Full Stack /> </h1>
-
-                    <p class="font-normal text-portPurple dark:text-white text-md md:text-xl mb-12">Adoro resolver desafios e facilitar a vida das pessoas através de códigos.</p>
-
-                        <div class="container max-w-screen-xl mx-auto px-4">
-            
-                            <div class="text-center">
-            
-                                <div class="flex items-center justify-center space-x-8">
-                                    <a href="#" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 hover:text-portPurple transition ease-in-out duration-500 text-portPurple dark:text-portYellow">
-                                        <i data-feather="linkedin" ></i>
-                                    </a>
-                
-                                    <a href="#" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 hover:text-portPurple transition ease-in-out duration-500 text-portPurple dark:text-portYellow">
-                                        <i data-feather="github" ></i>
-                                    </a>
-            
-                                    <a href="#" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 hover:text-portPurple transition ease-in-out duration-500 text-portPurple dark:text-portYellow">
-                                        <i data-feather="mail" ></i>
-                                    </a>
-            
-                                    <a href="#" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 hover:text-portPurple transition ease-in-out duration-500 text-portPurple dark:text-portYellow">
-                                        <i data-feather="message-circle" ></i>
-                                    </a>
-
-                                    <a href="#" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 hover:text-portPurple transition ease-in-out duration-500 text-portPurple dark:text-portYellow">
-                                        <i data-feather="align-center" ></i>
-                                    </a>
-                
-                                    <a href="#" class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 hover:text-portPurple transition ease-in-out duration-500 text-portYellow">
-                                        <i data-feather="instagram"></i>
-                                    </a>
-                                </div>
-                            </div>
-            
                         </div>
-            
+                    </label>
+                </div>
+
+                <button
+                    class="px-7 py-3 md:px-9 md:py-4 bg-zinc-100 font-medium md:font-semibold text-portPurple text-md rounded-md hover:bg-portPurple dark:hover:bg-portYellow hover:text-white transition ease-linear duration-300">Veja
+                    meu CV</button>
+            </nav>
+
+            <div class="text-center">
+                <div class="flex justify-center items-center mb-12">
+                    <img src="{% static '/img/felps.png' %}" alt="Image" class="h-[400px]">
+                </div>
+
+                <h6 class="font-medium text-portPurple dark:text-white text-lg md:text-2xl uppercase mb-8">Felps</h6>
+
+                <h1 class="font-normal text-portPurple dark:text-portYellow text-4xl md:text-7xl leading-none mb-8">
+                    < Desenvolvedor Full Stack />
+                </h1>
+
+                <p class="font-normal text-portPurple dark:text-white text-md md:text-xl mb-12">Adoro resolver desafios
+                    e facilitar a vida das pessoas através de códigos.</p>
+
+                <div class="container max-w-screen-xl mx-auto px-4">
+
+                    <div class="text-center">
+
+                        <div class="flex items-center justify-center space-x-8">
+                            <a href="#"
+                                class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 hover:text-portPurple transition ease-in-out duration-500 text-portPurple dark:text-portYellow">
+                                <i data-feather="linkedin"></i>
+                            </a>
+
+                            <a href="#"
+                                class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 hover:text-portPurple transition ease-in-out duration-500 text-portPurple dark:text-portYellow">
+                                <i data-feather="github"></i>
+                            </a>
+
+                            <a href="#"
+                                class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 hover:text-portPurple transition ease-in-out duration-500 text-portPurple dark:text-portYellow">
+                                <i data-feather="mail"></i>
+                            </a>
+
+                            <a href="#"
+                                class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 hover:text-portPurple transition ease-in-out duration-500 text-portPurple dark:text-portYellow">
+                                <i data-feather="message-circle"></i>
+                            </a>
+
+                            <a href="#"
+                                class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 hover:text-portPurple transition ease-in-out duration-500 text-portPurple dark:text-portYellow">
+                                <i data-feather="align-center"></i>
+                            </a>
+
+                            <a href="#"
+                                class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 hover:text-portPurple transition ease-in-out duration-500 text-portYellow">
+                                <i data-feather="instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
 
-        </section>
+        </div>
 
-        <section class="py-10 md:py-16">
+    </section>
 
-            <div class="container max-w-screen-xl mx-auto px-4">
+    <section class="py-10 md:py-16">
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="bg-gray-50 px-8 py-10 rounded-md">
-                        <div class="w-20 flex justify-center  mb-4 rounded-3xl">
-                            <img src="{% static 'img/brain.jpeg' %}" alt="Ícone de experiência" class="rounded-3xl">
-                        </div>
+        <div class="container max-w-screen-xl mx-auto px-4">
 
-                        <h4 class="font-bold text-portPurple text-lg mb-4">Experiência</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {% for skill in skills %}
 
-                        <p class="font-normal text-portPurple text-md">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
+                <div class="bg-gray-50 px-8 py-10 rounded-md">
+                    <div class="w-20 flex justify-center  mb-4 rounded-3xl">
+                        <img src="{% static skill.icon.url|cut:'portfolio/static/' %}" alt="Ícone de experiência"
+                            class="rounded-3xl">
                     </div>
-                    
-                    <div class="bg-gray-50 px-8 py-10 rounded-md">
-                        <div class="w-20 flex justify-center mb-4 rounded-3xl">
-                            <img src="{% static 'img/teamwork.jpeg' %}" alt="Ícone de trabalho em equipe" class="rounded-3xl">
-                        </div>
 
-                        <h4 class="font-bold text-portPurple text-lg mb-4">Trabalho em equipe</h4>
+                    <h4 class="font-bold text-portPurple text-lg mb-4">{{skill.title|title}}</h4>
 
-                        <p class="font-normal text-portPurple text-md">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                    
-                    <div class="bg-gray-50 px-8 py-10 rounded-md">
-                        <div class="w-20 flex justify-center  mb-4 rounded-3xl">
-                            <img src="{% static 'img/python.jpeg' %}" alt="Ícone de experiência" class="">
-                        </div>
-
-                        <h4 class="font-bold text-portPurple text-lg mb-4">Python</h4>
-
-                        <p class="font-normal text-portPurple text-md">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
+                    <p class="font-normal text-portPurple text-md">{{skill.description}}</p>
                 </div>
 
+                {% endfor %}
             </div>
 
-        </section>
+        </div>
 
-        <section class="py-10 md:py-16">
+    </section>
 
-            <div class="container max-w-screen-xl mx-auto px-4">
+    <section class="py-10 md:py-16">
 
-                <div class="flex flex-col lg:flex-row justify-between">
-                    <div class="mb-10 lg:mb-0">
-                        <h1 class="font-medium text-portPurple dark:text-portYellow text-3xl md:text-4xl mb-5">Portfólio</h1>
+        <div class="container max-w-screen-xl mx-auto px-4">
 
-                        <p class="font-normal text-portPurple dark:text-white text-xs md:text-base">Aqui estão alguns dos projetos que desenvolvi ao longo dos anos.</p>
-                    </div>
+            <div class="flex flex-col lg:flex-row justify-between">
+                <div class="mb-10 lg:mb-0">
+                    <h1 class="font-medium text-portPurple dark:text-portYellow text-3xl md:text-4xl mb-5">Portfólio
+                    </h1>
 
-                    <div class="space-y-24">
-                        <div class="flex space-x-6">
-                            <h1 class="font-normal text-portPurple dark:text-portYellow text-3xl md:text-4xl">01</h1>
-
-                            <span class="w-28 h-0.5 bg-portPurple dark:bg-portYellow mt-5"></span>
-
-                            <div>
-                                <h1 class="font-normal text-portPurple dark:text-portYellow text-3xl md:text-4xl mb-5">Demo API Generator</h1>
-
-                                <p class="font-normal text-portPurple dark:text-white text-sm md:text-base">A dummy data free and documented API generator to facilitate <br> the process of testing the front-end portion of projects.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex space-x-6">
-                            <h1 class="font-normal text-portPurple dark:text-portYellow text-3xl md:text-4xl">02</h1>
-
-                            <span class="w-28 h-0.5 bg-portPurple dark:bg-portYellow mt-5"></span>
-
-                            <div>
-                                <h1 class="font-normal text-portPurple dark:text-portYellow text-3xl md:text-4xl mb-5">Demo API Generator</h1>
-
-                                <p class="font-normal text-portPurple dark:text-white text-sm md:text-base">A dummy data free and documented API generator to facilitate <br> the process of testing the front-end portion of projects.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex space-x-6">
-                            <h1 class="font-normal text-portPurple dark:text-portYellow text-3xl md:text-4xl">03</h1>
-
-                            <span class="w-28 h-0.5 bg-portPurple dark:bg-portYellow mt-5"></span>
-
-                            <div>
-                                <h1 class="font-normal text-portPurple dark:text-portYellow text-3xl md:text-4xl mb-5">Demo API Generator</h1>
-
-                                <p class="font-normal text-portPurple dark:text-white text-sm md:text-base">A dummy data free and documented API generator to facilitate <br> the process of testing the front-end portion of projects.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <p class="font-normal text-portPurple dark:text-white text-xs md:text-base">Aqui estão alguns dos
+                        projetos que desenvolvi ao longo dos anos.</p>
                 </div>
 
-            </div>
+                <div class="space-y-24">
+                    {% for project in projects %}
+                    <div class="flex space-x-6">
+                        <h1 class="font-normal text-portPurple dark:text-portYellow text-3xl md:text-4xl">
+                            0{{project.id}}</h1>
 
-        </section>
+                        <span class="w-28 h-0.5 bg-portPurple dark:bg-portYellow mt-5"></span>
 
-        <section class="py-10 md:py-16">
+                        <div>
+                            <h1 class="font-normal text-portPurple dark:text-portYellow text-3xl md:text-4xl mb-5">
+                                {{project.title}}</h1>
 
-            <div class="container max-w-screen-xl mx-auto px-4">
-
-                <h1 class="font-medium text-portPurple dark:text-portYellow text-3xl md:text-4xl mb-5">Educação</h1>
-
-                <p class="font-normal text-portPurple dark:text-white text-xs md:text-base mb-20">Abaixo, um breve resumo sobre minha trajetória acadêmica/estudos.</p>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="bg-gray-50 px-8 py-10 rounded-md">
-                        <h4 class="font-medium text-portPurple text-lg mb-4">2015 – 2016</h4>
-
-                        <p class="font-normal text-portPurple text-md mb-4">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
-
-                        <div class="relative">
-                            <h6 class="font-semibold text-portPurple text-md relative z-10 underline">See the place here</h6>
+                            <p class="font-normal text-portPurple dark:text-white text-sm md:text-base">
+                                {{project.description}}</p>
+                            <a href="{{project.url}}"
+                                class="font-extralight text-portPurple dark:text-portYellow text-xs md:text-base underline">
+                                Acesse aqui</a>
                         </div>
                     </div>
+                    {% endfor %}
 
-                    <div class="bg-gray-50 px-8 py-10 rounded-md">
-                        <h4 class="font-medium text-portPurple text-lg mb-4">2015 – 2016</h4>
-
-                        <p class="font-normal text-portPurple text-md mb-4">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
-
-                        <div class="relative">
-                            <h6 class="font-semibold text-portPurple text-md relative z-10 underline">See the place here</h6>
-                        </div>
-                    </div>
-
-                    <div class="bg-gray-50 px-8 py-10 rounded-md">
-                        <h4 class="font-medium text-portPurple text-lg mb-4">2015 – 2016</h4>
-
-                        <p class="font-normal text-portPurple text-md mb-4">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
-
-                        <div class="relative">
-                            <h6 class="font-semibold text-portPurple text-md relative z-10 underline">See the place here</h6>
-                        </div>
-                    </div>
                 </div>
-
             </div>
 
-        </section>
+        </div>
 
-        <section class="py-10 md:py-16">
+    </section>
 
-            <div class="container max-w-screen-xl mx-auto px-4">
+    <section class="py-10 md:py-16">
 
-                <h1 class="font-medium text-portPurple dark:text-portYellow text-3xl md:text-4xl mb-5">Experiência</h1>
+        <div class="container max-w-screen-xl mx-auto px-4">
 
-                <p class="font-normal text-portPurple dark:text-white text-xs md:text-base mb-20">Abaixo, um resumo das minhas experiências profissionais.</p>
+            <h1 class="font-medium text-portPurple dark:text-portYellow text-3xl md:text-4xl mb-5">Educação</h1>
 
-                <div class="flex flex-col lg:flex-row justify-between">
-                    <div class="space-y-8 md:space-y-16 mb-16 md:mb-0">
-                        <h6 class="font-medium text-portPurple dark:text-white text-xl uppercase">Empresa</h6>
+            <p class="font-normal text-portPurple dark:text-white text-xs md:text-base mb-20">Abaixo, um breve resumo
+                sobre minha trajetória acadêmica/estudos.</p>
 
-                        <p class="font-bold text-portPurple dark:text-portYellow text-lg">Trybe </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                        <p class="font-bold text-portPurple dark:text-portYellow text-lg">Pitágoras </p>
+                {% for education in educations %}
+                <div class="bg-gray-50 px-8 py-10 rounded-md">
+                    <h2 class="font-bold text-portPurple text-lg mb-4">{{education.title}}</h2>
+                    <h4 class="font-medium text-portPurple text-lg mb-4">{{education.start_end_date}}</h4>
 
-                        <p class="font-bold text-portPurple dark:text-portYellow text-lg">Palomar </p>
+                    <p class="font-normal text-portPurple text-md mb-4">{{education.description}}</p>
 
-                    </div>
+                    <div class="relative">
 
-                    <div class="space-y-8 md:space-y-16 mb-16 md:mb-0">
-                        <h6 class="font-medium text-portPurple dark:text-white text-xl uppercase">Cargo</h6>
-
-                        <p class="font-normal text-portPurple dark:text-portYellow text-lg">Desenvolvedor de Software / Instrutor</p>
-
-                        <p class="font-normal text-portPurple dark:text-portYellow text-lg">Professor - Física, Ciências, Programação</p>
-
-                        <p class="font-normal text-portPurple dark:text-portYellow text-lg">Professor - Física, Ciências, Programação</p>
-                    </div>
-
-                    <div class="space-y-8 md:space-y-16">
-                        <h6 class="font-medium text-portPurple dark:text-white text-xl uppercase">Ano</h6>
-
-                        <p class="font-normal text-portPurple dark:text-portYellow text-lg">2021-Presente</p>
-
-                        <p class="font-normal text-portPurple dark:text-portYellow text-lg">2019-2021</p>
-
-                        <p class="font-normal text-portPurple dark:text-portYellow text-lg">2016-2020</p>
+                        <a href="{{education.url}}"
+                            class="font-semibold text-portPurple text-md relative z-10 underline">See the place here</a>
                     </div>
                 </div>
-                
+                {% endfor %}
             </div>
 
-        </section>
+        </div>
 
-        <section class="py-10 md:py-16">
+    </section>
 
-            <div class="container max-w-screen-xl mx-auto px-4">
+    <section class="py-10 md:py-16">
 
-                <h1 class="font-medium text-portPurple dark:text-portYellow text-3xl md:text-4xl mb-5">Recomendações</h1>
+        <div class="container max-w-screen-xl mx-auto px-4">
 
-                <p class="font-normal text-portPurple dark:text-white text-xs md:text-base mb-10 md:mb-20">Abaixo, algumas recomendações de colegas e/ou clientes.</p>
+            <h1 class="font-medium text-portPurple dark:text-portYellow text-3xl md:text-4xl mb-5">Experiência</h1>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="bg-gray-50 px-8 py-10 rounded-md">
+            <p class="font-normal text-portPurple dark:text-white text-xs md:text-base mb-20">Abaixo, um resumo das
+                minhas experiências profissionais.</p>
 
-                        <p class="font-normal text-portPurple text-md mb-4">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
+            <div class="flex flex-col lg:flex-row justify-between">
+                <div class="space-y-8 md:space-y-16 mb-16 md:mb-0">
+                    <h6 class="font-medium text-portPurple dark:text-white text-xl uppercase">Empresa</h6>
 
-                        <h6 class="font-bold text-portPurple text-md">Stephan Clark <span class="font-medium text-portPurple text-sm">- CEO at EarlyBird</span></h6>
-                    </div>
+                    {% for experience in experiences %}
+                    <p class="font-bold text-portPurple dark:text-portYellow text-lg">{{experience.company}}</p>
+                    {% endfor %}
 
-                    <div class="bg-gray-50 px-8 py-10 rounded-md">
-
-                        <p class="font-normal text-portPurple text-md mb-4">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
-
-                        <h6 class="font-bold text-portPurpletext-md">Stephan Clark <span class="font-medium text-portPurple text-sm">- CEO at EarlyBird</span></h6>
-                    </div>
-
-                    <div class="bg-gray-50 px-8 py-10 rounded-md">
-
-                        <p class="font-normal text-portPurple text-md mb-4">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
-
-                        <h6 class="font-bold text-portPurple text-md">Stephan Clark <span class="font-medium text-portPurple text-sm">- CEO at EarlyBird</span></h6>
-                    </div>
                 </div>
 
+                <div class="space-y-8 md:space-y-16 mb-16 md:mb-0">
+                    <h6 class="font-medium text-portPurple dark:text-white text-xl uppercase">Cargo</h6>
+                    {% for experience in experiences %}
+                    <p class="font-normal text-portPurple dark:text-portYellow text-lg">{{experience.role}}</p>
+                    {% endfor %}
+                </div>
+
+                <div class="space-y-8 md:space-y-16">
+                    <h6 class="font-medium text-portPurple dark:text-white text-xl uppercase">Ano</h6>
+
+                    {% for experience in experiences %}
+                    <p class="font-normal text-portPurple dark:text-portYellow text-lg">{{ experience.start_end_date }}
+                    </p>
+                    {% endfor %}
+                </div>
             </div>
 
-        </section>
+        </div>
 
-        <script>
-            feather.replace()
-        </script>
+    </section>
 
-    </body>
+    <section class="py-10 md:py-16">
+
+        <div class="container max-w-screen-xl mx-auto px-4">
+
+            <h1 class="font-medium text-portPurple dark:text-portYellow text-3xl md:text-4xl mb-5">Recomendações</h1>
+
+            <p class="font-normal text-portPurple dark:text-white text-xs md:text-base mb-10 md:mb-20">Abaixo, algumas
+                recomendações de colegas e/ou clientes.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                {% for recommendation in recommendations %}
+
+                <div class="bg-gray-50 px-8 py-10 rounded-md">
+
+                    <p class="font-normal text-portPurple text-md mb-4">{{recommendation.description}}</p>
+
+                    <h6 class="font-bold text-portPurple text-md">{{recommendation.name}} <span
+                            class="font-medium text-portPurple text-sm">- {{recommendation.role}} - {{recommendation.company}}</span></h6>
+                </div>
+
+                {% endfor %}
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+        feather.replace()
+    </script>
+
+</body>
+
 </html>
