@@ -1,6 +1,6 @@
 import os
 
-from django.http import Http404, FileResponse
+from django.http import Http404
 from django.shortcuts import render
 from portfolio.models import (
     Skill,
@@ -39,8 +39,8 @@ def download_curriculo(request):
     file_path = "staticfiles/curriculo.pdf"
     if os.path.exists(file_path):
         with open(file_path, "rb") as fh:
-            response = HttpResponse(fh.read(), content_type="application/pdf")
-            response["Content-Disposition"] = "attachment; filename=cv_felps.pdf"
-            return response
+            res = HttpResponse(fh.read(), content_type="application/pdf")
+            res["Content-Disposition"] = "attachment; filename=cv_felps.pdf"
+            return res
 
     raise Http404
