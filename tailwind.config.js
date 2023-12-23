@@ -9,8 +9,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         'matrix-pattern': "url('./background.png')",
-        'sun': "url('./sun.jpeg')",
-        'moon': "url('./moon.jpeg')",
+        'sun': "url('./sun.webp')",
+        'moon': "url('./moon.webp')",
       },
       colors: {
         portPurple: '#2D1250',

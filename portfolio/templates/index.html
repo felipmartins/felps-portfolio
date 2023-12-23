@@ -45,7 +45,7 @@
 
             <div class="text-center">
                 <div class="flex justify-center items-center mb-12">
-                    <img src="{% static '/img/felps.png' %}" alt="Image" class="h-[300px] md:h-[400px] lg:h-[400px]">
+                    <img src="{% static '/img/felps.webp' %}" alt="Image" class="h-[300px] md:h-[400px] lg:h-[400px]">
                 </div>
 
                 <h6 class="font-medium text-portPurple dark:text-white text-lg md:text-2xl uppercase mb-8">Felps</h6>
@@ -63,32 +63,32 @@
 
                         <div class="flex items-center justify-center space-x-8">
                             <a href="https://www.linkedin.com/in/felps/"
-                                class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 hover:text-portPurple transition ease-in-out duration-500 text-portPurple dark:text-portYellow">
+                                class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 dark:hover:text-portPurple hover:text-portPurple transition ease-in-out duration-500 text-portPurple dark:text-portYellow">
                                 <i data-feather="linkedin"></i>
                             </a>
 
                             <a href="https://github.com/felipmartins"
-                                class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 hover:text-portPurple transition ease-in-out duration-500 text-portPurple dark:text-portYellow">
+                                class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 dark:hover:text-portPurple hover:text-portPurple transition ease-in-out duration-500 text-portPurple dark:text-portYellow">
                                 <i data-feather="github"></i>
                             </a>
 
                             <a href="mailto:felipmartins94@gmail.com"
-                                class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 hover:text-portPurple transition ease-in-out duration-500 text-portPurple dark:text-portYellow">
+                                class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 dark:hover:text-portPurple hover:text-portPurple transition ease-in-out duration-500 text-portPurple dark:text-portYellow">
                                 <i data-feather="mail"></i>
                             </a>
 
                             <a href="https://wa.me/55031994702122?text=Ol%C3%A1,%20Felps!%20Peguei%20seu%20contato%20atrav%C3%A9s%20do%20portf%C3%B3lio."
-                                class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 hover:text-portPurple transition ease-in-out duration-500 text-portPurple dark:text-portYellow">
+                                class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 dark:hover:text-portPurple hover:text-portPurple transition ease-in-out duration-500 text-portPurple dark:text-portYellow">
                                 <i data-feather="message-circle"></i>
                             </a>
 
                             <a href="https://dev.to/felipmartins"
-                                class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 hover:text-portPurple transition ease-in-out duration-500 text-portPurple dark:text-portYellow">
+                                class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 dark:hover:text-portPurple hover:text-portPurple transition ease-in-out duration-500 text-portPurple dark:text-portYellow">
                                 <i data-feather="align-center"></i>
                             </a>
 
                             <a href="https://www.instagram.com/_felpsm"
-                                class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 hover:text-portPurple transition ease-in-out duration-500 text-portYellow">
+                                class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 dark:hover:text-portPurple hover:text-portPurple transition ease-in-out duration-500 text-portPurple dark:text-portYellow">
                                 <i data-feather="instagram"></i>
                             </a>
                         </div>
@@ -189,7 +189,7 @@
                     <div class="relative">
 
                         <a href="{{education.url}}"
-                            class="font-semibold text-portPurple text-md relative z-10 underline">See the place here</a>
+                            class="font-semibold text-portPurple text-md relative z-10 underline">Veja sobre a instituição aqui</a>
                     </div>
                 </div>
                 {% endfor %}
@@ -256,8 +256,9 @@
 
                     <p class="font-normal text-portPurple text-md mb-4">{{recommendation.description}}</p>
 
-                    <h6 class="font-bold text-portPurple text-md">{{recommendation.name}} <span
-                            class="font-medium text-portPurple text-sm">- {{recommendation.role}} - {{recommendation.company}}</span></h6>
+                    <h6 class="font-bold text-portPurple text-md">{{recommendation.name}}</h6>
+                    <h6><span class="font-sm text-portPurple text-sm underline">{{recommendation.role}}</span></h6>
+                    <h6><span class="font-sm text-portPurple text-xs underline">{{recommendation.company}}</span></h6>
                 </div>
 
                 {% endfor %}
