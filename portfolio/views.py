@@ -35,8 +35,30 @@ def convert_markdown_to_pdf(request):
     )
 
 
+def convert_markdown_to_pdf_en(request):
+    output_file = "staticfiles/curriculo_en.pdf"
+    markdown_file = "portfolio/curriculo_en.md"
+
+    Converter(output_file).convert([markdown_file])
+
+    return HttpResponse(
+        f"Curriculo gerado em {output_file}.", content_type="text/plain"
+    )
+
+
 def download_curriculo(request):
     file_path = "staticfiles/curriculo.pdf"
+    if os.path.exists(file_path):
+        with open(file_path, "rb") as fh:
+            res = HttpResponse(fh.read(), content_type="application/pdf")
+            res["Content-Disposition"] = "attachment; filename=cv_felps.pdf"
+            return res
+
+    raise Http404
+
+
+def download_curriculo_en(request):
+    file_path = "staticfiles/curriculo_en.pdf"
     if os.path.exists(file_path):
         with open(file_path, "rb") as fh:
             res = HttpResponse(fh.read(), content_type="application/pdf")

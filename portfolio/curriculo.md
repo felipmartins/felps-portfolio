@@ -1,62 +1,61 @@
 # Felipe Pereira
-*Desenvolvedor Full Stack*
 
-[LinkedIn: linkedin.com/in/felps](https://www.linkedin.com/in/felps) | [GitHub: github.com/felipmartins](https://github.com/joana-dev) | [Portfolio: felps.dev](https://felps.me)
+*Desenvolvedor de Software | Cientista de Dados*
+
+*Email: felipmartins94@gmail.com | Whatsapp/Telegram: +55 31 994702122*
+
+*[LinkedIn: linkedin.com/in/felps](https://www.linkedin.com/in/felps) | [GitHub: github.com/felipmartins](https://github.com/felipmartins) | [Portfolio: felps.me](https://felps.me)*   
 
 ---
 
 ## Resumo Profissional
-
-Desenvolvedor full stack apaixonado por resolver problemas e criar soluções inovadoras com mais de 3 anos de experiência. Especialista em Python e seus frameworks mas apto a atuar em qualquer desafio. Sólidos conhecimentos em Django, FastAPI e Flask. Sempre comprometido em entregar código de alta qualidade e solucionar problemas do client de maneira eficaz.
+Desenvolvedor comprometido com a resolução de problemas e criação de soluções inovadoras. Mais de 3 anos de experiência prática. Especializado em Python e seus frameworks. Trabalhei com frameworks como Django, FastAPI e Flask, e bibliotecas como Pandas, Scikit-learn, OpenCV, BeautifulSoup, Selenium, Requests. Tive a oportunidade de trabalhar em aplicações que usam bancos de dados relacionais e também não relacionais.
 
 ---
 
 ## Habilidades Técnicas
 
-- **Linguagens de Programação:** Python, JavaScript
-- **Frameworks:** Django, FastAPI, Flask
-- **Frontend:** HTML, CSS, JavaScript
-- **Banco de Dados:** SQL, PostgreSQL, MongoDB
+- **Linguagens:** Python, JavaScript
+- **Bibliotecas e Frameworks:** Django, FastAPI, Flask, Pandas, NumPy, Scikit-learn, OpenCV, BeautifulSoup, Selenium, Requests
+- **Frontend:** TailwindCSS, HTML, CSS, JavaScript, 
+- **Bancos de Dados:** MySQL, SQLite3, PostgreSQL, MongoDB
 
 ---
 
 ## Experiência Profissional
 
-**Pessoa instrutora de tecnologia | Trybe | Novembro 2021 - Presente**
-- Desenvolvimento e manutenção de aplicativos web full stack utilizando Django e Flask.
-- Colaboração estreita com equipes de design e produto para implementar funcionalidades eficazes.
-- Integração de APIs de terceiros para otimizar processos internos.
+**Desenvolvedor e Instrutor | Trybe | 2021 - Current job**
+- Escrevi, mantive, integrei e testei código de software para várias aplicações.
+- Mantive códigos existentes fazendo as modificações necessárias de acordo com as necessidades de outras equipes.
+- Identifiquei e comuniquei problemas técnicos, processos e soluções de forma eficaz.
+- Preparei relatórios, manuais e documentação sobre o status, operação e manutenção do software.
+- Desenvolvimento de aplicações web full-stack testadas usando Django, Flask e FastAPI.
+- Ensinei conceitos de desenvolvimento full-stack e ciência da computação, estruturas de dados e algoritmos.
+- Colaboração próxima com o time e também outras equipes para implementar recursos eficazes.
 
-**Professor | Colégio Pitágoras Cidade Jardim | Junho 2018 - Dezembro 2021**
-- Participação ativa no desenvolvimento de uma plataforma de e-commerce utilizando Django.
-- Implementação de interfaces de usuário responsivas com JavaScript, HTML e CSS.
-- Otimização de consultas SQL para melhorar o desempenho do sistema.
 
----
+**Desenvolvedor autônomo | 2018 - 2021**
+- Desenvolvimento de aplicações web full-stack usando Django, Flask e FastAPI.
+- Desenvolvi sistemas de gerenciamento de serviços e pagamentos para academia.
+- Desenvolvi pequenas aplicações web para controle pessoal de profissionais autônomos.
+- Analisei dados de uso das aplicações para clusterização de clientes e direcionamento de marketing.
 
-## Projetos
 
-**Sistema de Gerenciamento de Tarefas | [GitHub Repo](https://github.com/joana-dev/task-manager)**
-- Desenvolvimento de um aplicativo de gerenciamento de tarefas utilizando Django e Vue.js.
-- Integração com APIs externas para sincronização de dados.
-
-**Blog Pessoal | [joana.dev/blog](https://joana.dev/blog)**
-- Criação de um blog pessoal para compartilhar insights e experiências de desenvolvimento.
-- Desenvolvimento do frontend com React e estilização utilizando CSS-in-JS.
+**Professor - Física/Ciências/Programação | Palomar & Pitágoras | 2016 - 2021**
+- Criei conteúdo e ministrei aulas de física, ciências e programação.
+- Escrevi material didático usado por redes de ensino.
+- Gerenciei até 10 turmas simultâneas com até 40 alunos cada.
 
 ---
 
 ## Educação
-
-**Mestrado em Engenharia Nuclear | Universidade Federal de Minas Gerais | Concluído em Junho 2019**
-
-**Bacharelado em Física | Universidade Federal de Minas Gerais | Concluído em Junho 2016**
+- Pós-Graduação em Engenharia de Software | FAMEESP | Em Andamento
+- Pós-Graduação em Administração de Banco de Dados | FAMEESP | Em Andamento
+- Mestrado em Engenharia Nuclear | Universidade Federal de Minas Gerais | 2017 - 2019
+- Bacharelado em Física | Universidade Federal de Minas Gerais | 2012 - 2016
 
 ---
 
 ## Idiomas
+Português (Nativo) | Inglês (Fluente) | Espanhol (Básico) | Alemão (Básico)
 
-- Português (Nativo)
-- Inglês (Avançado)
-- Espanhol (Básico)
-- Alemão (Básico)
