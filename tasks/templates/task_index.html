@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load unicorn %}
+
+{% block title %}
+    Tabela com tarefas
+{% endblock %}
+
+
+{% block content %}
+{% csrf_token %}
+{% unicorn 'tasks-table' %}
+
+{% endblock %}

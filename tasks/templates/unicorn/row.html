@@ -1,0 +1,24 @@
+<tr class="text-sm text-center border-t-2 border-opacity-10 border-black {{color}} rounded-b-3xl">
+    <td>
+        {{task.title}}
+    </td>
+    <td>
+        {{task.description}}
+    </td>
+    <td>
+        {% if task.is_completed %}
+        <span class="badge badge-success">Concluída ✅</span>
+        {% else %}
+        <span class="badge badge-warning">Pendente ⏱️</span>
+        {% endif %}
+    </td>
+    <td>
+        {{task.created_at|date:"d/m/Y H:i"}}
+    </td>
+    <td>
+        {{task.updated_at|date:"d/m/Y H:i"}}
+    </td>
+    <td>
+        {{task.user.name}} - {{task.user.email}}
+    </td>
+</tr>

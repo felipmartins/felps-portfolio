@@ -23,11 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-&tddh78hkw(%0x0max9_$ubmg4=&=swh9e7uog0d3(#6uy(qyu"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = False
-DEBUG = True
+DEBUG = False
+# DEBUG = True
 
-# ALLOWED_HOSTS = ["felps.me", "34.212.21.153"]
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["felps.me", "34.212.21.153"]
+# ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "portfolio.apps.PortfolioConfig",
+    "tasks.apps.TasksConfig",
+    "django_unicorn",
 ]
 
 MIDDLEWARE = [
@@ -128,7 +130,7 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-# SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
-# SECURE_SSL_REDIRECT = True
-# SESSION_COOKIE_SECURE = True
-# CSRF_COOKIE_SECURE = True
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True

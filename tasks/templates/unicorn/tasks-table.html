@@ -1,0 +1,47 @@
+{% load unicorn %}
+
+
+<div class="flex flex-col w-5/6 h-fit bg-gray-200 rounded-3xl shadow-2xl items-center justify-center overflow-auto">
+    {% unicorn 'filter' %}
+
+    <table class="bg-blue-950 rounded-3xl w-11/12 mb-4">
+        <thead>
+        <tr class="text-white">
+            <th>Título</th>
+            <th>Descrição</th>
+            <th>Status</th>
+            <th>Criada em</th>
+            <th>Atualizada em</th>
+            <th>Pessoa Responsável</th>
+        </tr>
+        </thead>
+        <tbody class="">
+        {% for task in tasks %}
+        {% if forloop.counter0|divisibleby:2 %}
+        {% unicorn 'row' task=task key=task.id color="bg-slate-200" %}
+        {% else %}
+        {% unicorn 'row' task=task key=task.id color="bg-slate-400" %}
+        {% endif %}
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="flex flex-col bg-sla rounded-3xl w-5/12 h-fit gap-y-2 mb-4 py-4 items-center">
+        <span class="text-center">Adicionar Nova Tarefa 🎯</span>
+        <input class="shadow appearance-none border rounded w-11/12 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" unicorn:model.defer="title" type="text" placeholder="Título da Tarefa" id="title">
+        {% if unicorn.errors.title.0.message %}
+        <span class="text-sm text-red-500">{{unicorn.errors.title.0.message}}</span>
+        {% endif %}
+        <input class="shadow appearance-none border rounded w-11/12 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" unicorn:model.defer="description" type="text" placeholder="Descrição da Tarefa" id="description">
+        {% if unicorn.errors.description.0.message %}
+        <span class="text-sm text-red-500">{{unicorn.errors.description.0.message}}</span>
+        {% endif %}
+        <div class="flex pl-4 gap-x-2">
+        <label for="status">Tarefa já concluída?</label>
+        <input class="pl-4" unicorn:model.defer="is_completed" type="checkbox" id="status">
+        </div>
+        <div class="flex w-full items-center justify-center">
+        <button class="w-1/2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" unicorn:click="add_task">Adiciona na Tabela</button>
+        </div>
+    </div>
+</div>

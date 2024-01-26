@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load unicorn %}
+
+{% block title %}
+    Faça seu login
+{% endblock %}
+
+
+{% block content %}
+<div class="flex w-1/2 h-1/2 bg-gray-200 rounded-3xl shadow-2xl items-center justify-center my-12">
+    <form method="post" class="w-1/2">
+    {% csrf_token %}
+    {% for field in form %}
+        <div class="mb-4">
+            <label class="block text-gray-900 text-sm font-bold mb-2" for="{{field.id_for_label}}">{{field.label}}</label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                   type="{{field.field.widget.input_type}}"
+                   name="{{field.name}}"
+                   id="{{field.id_for_label}}"
+                   />
+            {% for error in field.errors %}
+                <p class="text-red-500">{{error}}</p>
+            {% endfor %}
+        </div>
+    {% endfor %}
+    <div class="flex items-center justify-center mt-4">
+    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mx-auto">
+        Entrar
+    </button>
+    </form>
+</div>
+{% endblock %}

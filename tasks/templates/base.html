@@ -1,0 +1,16 @@
+{% load static %}
+{% load unicorn %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/output.css' %}">
+    {% unicorn_scripts %}
+</head>
+<body class="flex flex-col bg-blue-500 h-screen w-screen items-center justify-center">
+    {% block content %}{% endblock %}
+</body>
+</html>
