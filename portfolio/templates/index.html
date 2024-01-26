@@ -136,8 +136,6 @@
                     <h1 class="font-medium text-portPurple dark:text-portYellow text-3xl md:text-4xl mb-5">Portfólio
                     </h1>
 
-                    <p class="font-normal text-portPurple dark:text-white text-xs md:text-base">Aqui estão alguns dos
-                        projetos que desenvolvi ao longo dos anos.</p>
                 </div>
 
                 <div class="space-y-24">
@@ -153,7 +151,7 @@
                                 {{project.title}}</h1>
 
                             <p class="font-normal text-portPurple dark:text-white text-sm md:text-base">
-                                {{project.description}}</p>
+                                {{project.description|linebreaksbr }}</p>
                             <a href="{{project.url}}"
                                 class="font-extralight text-portPurple dark:text-portYellow text-xs md:text-base underline">
                                 Acesse aqui</a>
